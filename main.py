@@ -1,18 +1,17 @@
 from termcolor import colored
 
+from _header import header
 from _vars import init as init1
 from _tuples import init as init2
 from _files import init as init3
 
 nb = -1
-menu_color = 'blue'
+menu_color = 'green'
 func_list = [init1, init2, init3]
 
 
 def main():
-    print("**************************************")
-    print("Python : Samples & Tests")
-    print("**************************************")
+    header("Python : Samples & Tests")
 
 
 if __name__ == '__main__':  # si script courant
@@ -23,7 +22,7 @@ def menu():
     print(colored("************** Menu *******************", menu_color))
     print(colored("1- Variables & Declaration", menu_color))
     print(colored("2- Tuples & List", menu_color))
-    print(colored("3- Dictionary..", menu_color))
+    print(colored("3- Files", menu_color))
     print(colored("4- All!", menu_color))
     print(colored("0- Quit!", menu_color))
     print(colored("***************************************", menu_color))
@@ -37,6 +36,16 @@ def menu():
     except Exception as e:  # (RuntimeError, TypeError, NameError):
         print(colored("(x) Error : " + str(e) + "! try again.", 'red'))
         menu()
+
+
+def cls():
+    import os
+    import platform
+
+    if platform.system() == "Windows":
+        os.system("cls")
+    elif platform.system() == "Linux":
+        os.system("clear")
 
 
 def all():
@@ -57,6 +66,7 @@ def exec_function(arg):
         2: init2,
         3: init3,
         4: all,
+        -1: cls,
     }
     func = switcher.get(arg, lambda: print(colored("(x) unknown function! try again.", 'red')))
     print("(!) func (exec.) ==> " + func.__name__)

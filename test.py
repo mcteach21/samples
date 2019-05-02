@@ -13,12 +13,15 @@
 # text = colored('Hi folks!', 'red', 'on_yellow')
 # print(text)
 
-from _vars import init as init1
-from _tuples import init as init2
-from _files import init as init3
+# from _vars import init as init1
+# from _tuples import init as init2
+# from _files import init as init3
+#
+# func_list = {init1, init2, init3}
+#
+# for f in func_list:
+#     f()
+#     # print(f.__name__)
 
-func_list = {init1, init2, init3}
-
-for f in func_list:
-    f()
-    # print(f.__name__)
+import subprocess
+subprocess.call([r'C:\Users\mchouarbi\Desktop\switch_console_to_utf8.bat'])
