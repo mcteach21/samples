@@ -1,12 +1,6 @@
-from termcolor import colored
+from _header import header
 
 txt = "global var text"
-
-
-def header(title):
-    print("**************************************")
-    print(colored(title, 'yellow'))
-    print("**************************************")
 
 
 def init():
