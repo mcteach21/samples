@@ -1,18 +1,10 @@
-# from termcolor import colored
 from _header import header
 
 tup1 = ('Robert', 'Carlos', '1965', 'Terminator 1995', 'Actor', 'Florida')
 tup2 = (1, 2, 3, 4, 5, 6, 7)
 
 
-# def header(title):
-#     print("**************************************")
-#     print(colored(title, 'yellow'))
-#     print("**************************************")
-
-
 def init():
-
     header("Python : Tuples & Dictionary")
 
     print(tup1[0])

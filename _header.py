@@ -9,5 +9,5 @@ def header(title):
     print("**************************************")
 
 
-def printc(txt, color='yellow'):
-    print(colored(txt, color))
+def printc(txt, _color='yellow'):
+    print(colored(txt, _color))

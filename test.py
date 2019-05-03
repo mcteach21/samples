@@ -23,5 +23,20 @@
 #     f()
 #     # print(f.__name__)
 
-import subprocess
-subprocess.call([r'C:\Users\mchouarbi\Desktop\switch_console_to_utf8.bat'])
+# import subprocess
+# subprocess.call([r'C:\Users\mchouarbi\Desktop\switch_console_to_utf8.bat'])
+# from classes.user import User
+#
+# user = User('Homer')
+# user.hello()
+
+Months = ["Jan", "Feb", "Mar", "April", "May", "June"]
+
+for m in Months:
+    print(m)
+
+for i, m in enumerate(Months):
+    print(i, m)
+
+for x in range(0, len(Months)):
+    print(Months[x])
